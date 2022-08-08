@@ -102,9 +102,20 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<!-- navigation end -->
 						</div>
 					</div>
+					<style>
+						.uk-button-default:focus,
+						.uk-button-default:hover {
+							background-color: #fc5b3f !important;
+						}
+					</style>
 					<div class="uk-navbar-right">
-						<div class="uk-navbar-item uk-visible@m in-optional-nav">
-							<a href="https://upstox.com/open-account/?f=JH3470" class="uk-button uk-button-primary uk-border-rounded">Join Upstox</a>
+						<div class="uk-navbar-item uk-visible@m in-optional-nav telegram-join-button">
+							<a href="https://t.me/IntradayEquityTrade">
+								<button class="uk-button uk-button-default uk-border-rounded" style='color:white;'>
+									<i class="fab fa-telegram-plane" style='color:#229ED9; font-size:20px;'></i>
+									Join Telegram for Free Tips
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
