@@ -55,51 +55,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<img src="<?= BASE_URL ?>/public/img/in-lazy.gif" data-src="<?= BASE_URL ?>/public/img/new_logo.jpg" alt="logo" width="60" height="60" data-uk-img>
 							</a>
 							<!-- logo end -->
-							<!-- navigation begin -->
-							<ul class="uk-navbar-nav uk-visible@m" style='display:none;'>
-								<li><a href="index-2.html">Home<i class="fas fa-chevron-down"></i></a>
-									<div class="uk-navbar-dropdown">
-										<ul class="uk-nav uk-navbar-dropdown-nav">
-											<li><a href="homepage2.html">Homepage 2</a></li>
-											<li><a href="homepage3.html">Homepage 3</a></li>
-											<li><a href="homepage4.html">Homepage 4</a></li>
-										</ul>
-									</div>
-								</li>
-								<li><a href="markets.html">Markets</a></li>
-								<li><a href="#">Company<i class="fas fa-chevron-down"></i></a>
-									<div class="uk-navbar-dropdown">
-										<ul class="uk-nav uk-navbar-dropdown-nav">
-											<li><a href="about.html">About</a></li>
-											<li><a href="blog-list.html">Blog</a></li>
-											<li><a href="careers.html">Careers</a></li>
-											<li><a href="contact.html">Contact</a></li>
-										</ul>
-									</div>
-								</li>
-								<li><a href="education.html">Education</a></li>
-								<li><a href="#">Resources<i class="fas fa-chevron-down"></i></a>
-									<div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-										<div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
-											<div>
-												<ul class="uk-nav uk-navbar-dropdown-nav">
-													<li><a href="https://getuikit.com/docs/">Documentation<i class="fas fa-external-link-square-alt fa-sm"></i></a></li>
-													<li><a href="help-center.html">Help Center</a></li>
-													<li><a href="customers.html">Customers</a></li>
-													<li><a href="roadmap.html">Roadmap</a></li>
-													<li><a href="legal-docs.html">Legal Docs<i class="fas fa-gavel fa-sm"></i></a></li>
-												</ul>
-											</div>
-											<div>
-												<ul class="uk-nav uk-navbar-dropdown-nav">
-													<li><a class="uk-disabled" href="#">Adipiscing elit sed do eiusmod incididunt ut labore dolore magna lorem ipsum sit dolor amet consectetur</a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<!-- navigation end -->
 						</div>
 					</div>
 					<style>
@@ -109,6 +64,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 						}
 					</style>
 					<div class="uk-navbar-right">
+						<div class="uk-navbar-item uk-hidden@m in-optional-nav telegram-join-button">
+							<a href="https://t.me/IntradayEquityTrade">
+								<button class="uk-button uk-button-default uk-border-rounded" style='color:white;'>
+									<i class="fab fa-telegram-plane" style='color:#229ED9; font-size:20px;'></i>
+									Join Telegram
+								</button>
+							</a>
+						</div>
 						<div class="uk-navbar-item uk-visible@m in-optional-nav telegram-join-button">
 							<a href="https://t.me/IntradayEquityTrade">
 								<button class="uk-button uk-button-default uk-border-rounded" style='color:white;'>
@@ -124,30 +87,37 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<!-- header content end -->
 	</header>
 	<main>
+		<style>
+			.main-content-small-screen {
+				min-height: 800px !important;
+			}
+
+			.main-content-small-screen-banner-img {
+				margin-top: 25px !important;
+			}
+		</style>
 		<!-- slideshow content begin -->
 		<div class="uk-section uk-padding-remove-vertical">
 			<div class="uk-light in-slideshow uk-background-cover uk-background-top-center" style="background-image: url(<?= BASE_URL ?>/public/img/in-liquid-slide-bg.png);" data-uk-slideshow>
-				<ul class="uk-slideshow-items">
+				<ul class="uk-slideshow-items main-content-small-screen">
 					<li>
 						<div class="uk-container">
 							<div class="uk-grid-medium" data-uk-grid>
 								<div class="uk-width-1-2@s">
 									<div class="uk-overlay">
 										<h1>Join IET,<br>a single service provider for <br> Stock Market.</h1>
-										<p class="uk-text-lead uk-visible@m">Trade forex, commodities, and stocks with experts from IET</p>
-										<a href="https://upstox.com/open-account/?f=JH3470" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Join Upstox</a>
+										<p class="uk-text-lead">Trade forex, commodities, and stocks with experts from IET</p>
+										<a href="https://upstox.com/open-account/?f=JH3470" class="uk-button uk-button-default uk-border-rounded">Join Upstox</a>
 									</div>
 								</div>
-								<div class="uk-width-1-2@s">
+								<div class="uk-width-1-2@s main-content-small-screen-banner-img">
 									<img class="in-slide-img" src="<?= BASE_URL ?>/public/img/in-lazy.gif" data-src="<?= BASE_URL ?>/public/img/in-liquid-slide-1.svg" alt="image-slide" width="500" height="400" data-uk-img>
 								</div>
 							</div>
 						</div>
 					</li>
 				</ul>
-				<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
-				<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
-				<div class="uk-section uk-padding-remove-vertical in-slideshow-features uk-visible@m" style='display:none;'>
+				<div class="uk-section uk-padding-remove-vertical in-slideshow-features uk-visible@m uk-hidden">
 					<div class="uk-container">
 						<ul class="uk-grid uk-child-width-1-5@m uk-text-center" data-uk-grid>
 							<li>
